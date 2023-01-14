@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Navbar from "../src/components/navbar/Navbar";
+import Footer from "../src/components/footer/Footer";
+import Home from "../src/pages/home/Home";
+import Contact from "../src/pages/contact/Contact";
+import Login from "./pages/auth/Login";
+import Register from "./pages/auth/Register";
+import Reset from "./pages/auth/Reset";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+// import NoMatchRoute from "./components/NoMatchRoute";
+import AdminOnly from "./components/adminOnly/AdminOnly";
+import Admin from "./pages/admin/Admin";
+import NoMatchRoute from "./components/NoMatchRoute";
+import ProductDetails from "./components/product/productDetails/ProductDetails";
+import Cart from "./pages/cart/Cart";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ToastContainer />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/reset" element={<Reset />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/product-details/:id" element={<ProductDetails />} />
+        <Route
+          path="/admin"
+          element={
+            <AdminOnly>
+              <Admin />
+            </AdminOnly>
+          }
+        />
+        <Route path="*" element={<NoMatchRoute />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

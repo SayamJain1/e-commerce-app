@@ -1,0 +1,45 @@
+.slider {
+  overflow: hidden;
+  max-height: 590px;
+  width: 100%;
+  position: relative;
+  border-radius: 30px;
+  margin: 20px 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  transition: all 1s ease;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  border-radius: 30px;
+  max-width: 100vw;
+  max-height: 100%;
+  object-fit: cover;
+  padding: 0 9px;
+}
+
+.swiper-button-prev {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.192);
+  padding: 5px;
+  padding: 19px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.swiper-button-next {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.192);
+  padding: 5px;
+  padding: 19px;
+  border-radius: 5px;
+  font-size: 13px;
+}
