@@ -132,7 +132,6 @@ function Navbar() {
           <div className={styles["menu-icon"]}>
             <span className={styles.cart}>
               <Link to="/cart">
-                Cart
                 <FaShoppingCart size={20} />
                 <p>0</p>
               </Link>
