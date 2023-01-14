@@ -13,13 +13,12 @@ import {
   SET_ACTIVE_USER,
 } from "../../redux/features/authSlice";
 import { selectIsloggedIn } from "../../redux/features/authSlice";
-import { AdminLink } from "../adminOnly/AdminOnly";
+import { AdminLink } from "../admin&proctedOnly/AdminOnly";
 import { selectCartItems } from "../../redux/features/cartSlice";
 
 function Navbar() {
   const isLogin = useSelector(selectIsloggedIn);
   const cartNumber = useSelector(selectCartItems);
-  console.log(cartNumber);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [showMenu, setShowMenu] = useState(false);
@@ -74,7 +73,7 @@ function Navbar() {
         <div className={styles.header}>
           <div className={styles.logo}>
             <Link to="/">
-              <h2>Amazon</h2>
+              <h2>Bee Store</h2>
             </Link>
           </div>
           <nav
@@ -98,7 +97,7 @@ function Navbar() {
               <li>
                 <AdminLink>
                   <Link to="/admin">
-                    <button className="--btn --btn-primary">Admin</button>
+                    <button className="--btn">Admin</button>
                   </Link>
                 </AdminLink>
               </li>
@@ -124,7 +123,6 @@ function Navbar() {
               </span>
               <span className={styles.cart}>
                 <Link to="/cart">
-                  Cart
                   <FaShoppingCart size={20} />
                   <p>{cartNumber.length}</p>
                 </Link>

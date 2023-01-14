@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --font-family: "Poppins", sans-serif;
@@ -285,7 +289,7 @@ p {
 }
 
 .--btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .--btn-lg {
@@ -298,7 +302,7 @@ p {
 
 .--btn-primary {
   color: #fff;
-  background: #007bff;
+  background: #000000;
 }
 .--btn-secondary {
   color: #fff;
@@ -307,7 +311,8 @@ p {
 }
 .--btn-danger {
   color: #fff;
-  background: orangered;
+  /* background: rgb(21, 4, 85); */
+  background: #405cf5;
 }
 
 .--btn-success {
@@ -427,6 +432,5 @@ a {
 }
 
 a:hover {
-  color: var(--color-dark);
-  font-size: 1.5rem;
+  color: rgb(78, 23, 23);
 }

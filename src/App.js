@@ -9,7 +9,7 @@ import Reset from "./pages/auth/Reset";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import NoMatchRoute from "./components/NoMatchRoute";
-import AdminOnly from "./components/adminOnly/AdminOnly";
+import AdminOnly from "./components/admin&proctedOnly/AdminOnly";
 import Admin from "./pages/admin/Admin";
 import NoMatchRoute from "./components/NoMatchRoute";
 import ProductDetails from "./components/product/productDetails/ProductDetails";

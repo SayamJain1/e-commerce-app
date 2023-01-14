@@ -1,5 +1,5 @@
 import React from "react";
-import AdminAddProduct from "../../components/adminOnly/AdminAddProduct";
+import AdminAddProduct from "../../components/admin&proctedOnly/AdminAddProduct";
 
 function Admin() {
   return (

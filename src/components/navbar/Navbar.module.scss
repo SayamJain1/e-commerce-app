@@ -8,7 +8,7 @@
 
 header {
   width: 100%;
-  background-color: var(--dark-blue);
+  background-color: rgb(0, 0, 0);
   color: #fff;
 
   .header {
@@ -24,18 +24,23 @@ header {
   }
 
   .logo a h2 {
-    width: 25%;
+    margin-top: 10px;
+    font-family: "Pacifico", cursive;
+    // min-width: 25%;
     color: #fff;
     cursor: pointer;
-    
   }
 
   nav {
+    border: 2px solid blue($color: #000000);
     width: 75%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     ul {
       display: flex;
+      align-items: center;
+
       justify-content: space-between;
       list-style: none;
 
@@ -48,7 +53,7 @@ header {
         a {
           color: #fff;
           &:hover {
-            color: orangered;
+            color: rgb(190, 190, 190);
           }
         }
       }
@@ -63,7 +68,7 @@ header {
       color: #fff;
       position: relative;
       &:hover {
-        color: orangered;
+        color: rgb(190, 190, 190);
       }
       &.active {
         color: var(--color-danger);
@@ -88,7 +93,7 @@ header {
       margin: 0 5px;
       color: #fff;
       &:hover {
-        color: orangered;
+        color: rgb(190, 190, 190);
       }
       &.active {
         color: var(--color-danger);
@@ -184,9 +189,9 @@ header {
       a {
         color: #fff;
         position: relative;
-        &:hover {
-          color: orangered;
-        }
+        // &:hover {
+        //   color: orangered;
+        // }
         p {
           position: absolute;
           top: -1rem;
