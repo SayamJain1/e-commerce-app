@@ -5,10 +5,7 @@ import { Link, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import { db } from "../../../firebase-config";
 import spinner from "../../../assets/spinner.gif";
-import {
-  ADD_TO_CART,
-  TOTAL_QUANTITY,
-} from "../../../redux/features/cartSlice";
+import { ADD_TO_CART, TOTAL_QUANTITY } from "../../../redux/features/cartSlice";
 import { useDispatch } from "react-redux";
 
 function ProductDetails() {
@@ -42,13 +39,15 @@ function ProductDetails() {
 
   return (
     <section>
-      <div className={`container ${styles.product}`}>
+      <div className={styles.heading}>
         <h2>Product Details</h2>
         <div>
           <Link to="/">
             <button className="--btn">&larr; Back</button>
           </Link>
         </div>
+      </div>
+      <div className={`container ${styles.product}`}>
         {product === null ? (
           <img src={spinner} style={{ height: "25px" }} alt="" />
         ) : (

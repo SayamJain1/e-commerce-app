@@ -212,6 +212,17 @@ header {
       > * {
         margin-left: 2rem;
       }
+      .cart {
+        
+        a{
+          position: relative;
+
+          p{
+            position: absolute;
+            left: 20px;
+          }
+        }
+      }
     }
   }
 }

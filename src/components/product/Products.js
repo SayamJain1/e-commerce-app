@@ -28,7 +28,7 @@ function Products() {
   }, [dispatch, data]);
 
   const toggelFilter = () => {
-    setShowFilter(!showFilter)
+    setShowFilter(!showFilter);
   };
 
   return (

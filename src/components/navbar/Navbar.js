@@ -133,7 +133,7 @@ function Navbar() {
             <span className={styles.cart}>
               <Link to="/cart">
                 <FaShoppingCart size={20} />
-                <p>0</p>
+                <p>{cartNumber.length}</p>
               </Link>
             </span>
             <HiOutlineMenuAlt3 size={28} onClick={toggleMenu} />
