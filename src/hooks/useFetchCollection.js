@@ -28,7 +28,7 @@ const useFetchCollection = (collectionName) => {
 
   useEffect(() => {
     getCollection();
-  }, []);
+  }, [getCollection]);
 
   return { data, isLoading };
 };
