@@ -73,7 +73,7 @@ function Navbar() {
         <div className={styles.header}>
           <div className={styles.logo}>
             <Link to="/">
-              <h2>Bee Store</h2>
+              <h2>Dress Park</h2>
             </Link>
           </div>
           <nav
