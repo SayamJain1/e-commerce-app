@@ -54,7 +54,7 @@ const Footer = () => {
       <div className={styles.bottom_flex}>
         <div className={styles.wrapper}>
           <img
-            height={"18px"}
+            className={styles.flag}
             src="https://cdn.pixabay.com/photo/2013/07/13/12/13/flag-159416_960_720.png"
             alt="region image"
           />
